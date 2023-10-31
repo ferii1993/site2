@@ -24,6 +24,13 @@
    .home__title{
     font-size: 3.5rem;
    }
+   .service{
+    height: 28.9rem;
+    padding: 0 1rem;
+   }
+   .service__title{
+    font-size: 2rem;
+   }
 }
 
 @media screen and (max-width: 992px){
@@ -58,6 +65,9 @@
         justify-content: center;
         align-items: center;
     }
+    .service{
+        height: 33rem;
+       }
 }
 
 @media screen and (max-width: 768px){
@@ -108,6 +118,9 @@
         z-index: 99;
         opacity: 1;
     }
+    .service{
+        height: 24rem;
+       }
 }
 
 @media screen and (max-width: 576px){

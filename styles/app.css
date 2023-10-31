@@ -414,3 +414,62 @@ body{
 .about__link:last-child{
     margin-right: 0;
 }
+
+.services{
+
+}
+
+.service{
+    height: 35rem;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4rem
+}
+
+.service__icon{
+
+}
+
+.service__title{
+    font-family: var(--tertiarily-font);
+    font-size: 2.4rem;
+    margin: 0 auto;
+    margin: 1.5rem auto;
+}
+
+.service__description{
+    font-size: 1.6rem;
+    margin: 0 auto;
+    white-space: no-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.service--purple{
+    background-color: #8540FF;
+}
+
+.service--yellow{
+    background-color: #FFC50C;
+}
+
+.service--pink{
+    background-color: #EC407A;
+}
+
+.service--orange{
+    background-color: #FF6331;
+}
+
+.service--blue{
+    background-color: #13B6FF;
+}
+
+.service--green{
+    background-color: #49AF46;
+}
