@@ -23,7 +23,7 @@ navBtn.addEventListener("click",function(){
     console.log(hamburger_checker)
 })
 
-menu.addEventListener("touch",function(){
+menu.addEventListener("touchstart",function(){
    if(hamburger_checker){
         menu.classList.remove("menu--open") 
         navBtn.classList.remove("nav__toggle-icon--open")  
