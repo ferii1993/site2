@@ -452,24 +452,52 @@ body{
 
 .service--purple{
     background-color: #8540FF;
+    background-image: url(../images/shapes/service-shape-purple.svg);
+    background-repeat: no-repeat;
+    background-position: center 12.5rem;
+    background-size: contain;
 }
 
 .service--yellow{
     background-color: #FFC50C;
+    background-image: url(../images/shapes/service-shape-yellow.svg);
+    background-repeat: no-repeat;
+    background-position: center 12.5rem;
+    background-size: contain;
 }
 
 .service--pink{
     background-color: #EC407A;
+    background-image: url(../images/shapes/service-shape-pink.svg);
+    background-repeat: no-repeat;
+    background-position: center 12.5rem;
+    background-size: contain;
 }
 
 .service--orange{
     background-color: #FF6331;
+    background-image: url(../images/shapes/service-shape-orange.svg);
+    background-repeat: no-repeat;
+    background-position: center 12.5rem;
+    background-size: contain;
 }
 
 .service--blue{
     background-color: #13B6FF;
+    background-image: url(../images/shapes/service-shape-blue.svg);
+    background-repeat: no-repeat;
+    background-position: center 12.5rem;
+    background-size: contain;
 }
 
 .service--green{
     background-color: #49AF46;
+    background-image: url(../images/shapes/service-shape-green.svg);
+
+}
+
+.service--shape{
+    background-repeat: no-repeat;
+    background-position: center 12.5rem;
+    background-size: contain;
 }

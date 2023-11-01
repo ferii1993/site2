@@ -121,6 +121,11 @@
     .service{
         height: 24rem;
        }
+    .service--shape{
+        background-repeat: no-repeat;
+        background-position: center 8rem;
+        background-size: cover;
+    }   
 }
 
 @media screen and (max-width: 576px){
