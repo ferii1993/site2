@@ -71,6 +71,19 @@
     .service{
         height: 33rem;
        }
+    .resume-content__title{
+        font-size: 1.6rem;
+    } 
+    .resume-content__date{
+        padding: .4rem 1.5rem;
+    }
+    .resume-content__subtitle{
+        margin: 1rem 0 .5rem;
+        font-size: 1.4rem;
+    }
+    .resume-content__description{
+        font-size: 1.38rem;
+    }
 }
 
 @media screen and (max-width: 768px){
