@@ -543,6 +543,7 @@ resume-leftPart
     width: 30rem;
     border-radius: 10rem;
     background-color: var(--primitively-color);
+    transition: all 250ms ease-in-out;
 }
 
 .resume-list__item::after{

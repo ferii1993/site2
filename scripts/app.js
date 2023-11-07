@@ -2,6 +2,7 @@ const navBtn = document.querySelector(".nav__toggle-icon")
 const menu = document.querySelector(".menu")
 const cover = document.querySelector(".cover")
 const body = document.querySelector("body")
+const resumeList = document.querySelectorAll(".resume-list__item")
 
 let hamburger_checker = false
 
@@ -29,4 +30,16 @@ menu.addEventListener("touchstart",function(){
         navBtn.classList.remove("nav__toggle-icon--open")  
         cover.classList.remove("cover--show") 
    }
+})
+
+
+resumeList.forEach(function(item){
+    item.addEventListener("click",function(){
+        resumeList.forEach(function(items){
+            items.classList.remove("resume-list__item--active")
+            items.style.color = "#333333"
+        })
+        item.classList.add("resume-list__item--active")
+        item.style.color = "#fff"
+    })
 })
