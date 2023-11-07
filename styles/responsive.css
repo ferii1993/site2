@@ -71,6 +71,12 @@
     .service{
         height: 33rem;
        }
+    .resume-list__text{
+        font-size: 1.6rem;
+    }   
+    .resume-content__item{
+        padding-top: .64rem;
+    }
     .resume-content__title{
         font-size: 1.6rem;
     } 
