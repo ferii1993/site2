@@ -552,27 +552,29 @@ resume-leftPart
 
 .resume-list__item:first-child{
     margin-top: 0;
-    color: #fff;
 }
 
-.resume-list__item--active{
-    width: 30rem;
-    border-radius: 10rem;
-    background-color: var(--primitively-color);
-    transition: all 250ms ease-in-out;
-}
-
-.resume-list__item::after{
+.resume-list__item::before{
     content: "";
     position: absolute;
     background-color: var(--primitively-color);
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
     top: 0;
     bottom: 0;
     left: .5rem;
-    border-radius: 50%;
+    border-radius: 3rem;
     z-index: -1;
+    transition: all 250ms ease-in;
+    max-width: 30rem;
+}
+
+.resume-list__item--active{
+    color: #fff;
+    transition: all 250ms ease-in;
+}
+
+.resume-list__item--active::before{
+    width: 100%;
 }
 
 .resume-list__icon{
@@ -580,7 +582,7 @@ resume-leftPart
 }
 
 .resume-list__text{
-    margin-left: 3.5rem;
+    margin-left: 5rem;
     font-family: var(--secondary-font);
     font-size: 2rem;
 }
