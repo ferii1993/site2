@@ -60,6 +60,9 @@
     .home__photo{
         margin: 0 auto;
     }
+    .about-us{
+        margin-top: 10rem;
+    }
     .about{
         flex-direction: column;
         
@@ -68,9 +71,15 @@
         justify-content: center;
         align-items: center;
     }
+    .services{
+        margin-top: 10rem;
+    }
     .service{
         height: 33rem;
-       }
+    }
+    .resume{
+        margin-top: 10rem;
+    }
     .resume-list__text{
         font-size: 1.6rem;
     }   

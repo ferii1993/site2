@@ -86,6 +86,11 @@
     align-items: center;
 }
 
+.skew-reset{
+    transform: skewY(6deg);
+    overflow: hidden;
+}
+
 /*
     Reset Styles
 */
@@ -323,7 +328,7 @@ body{
 */
 
 .about-us{
-    margin-top: 6rem;
+    margin-top: 20rem;
 }
 
 
@@ -415,9 +420,13 @@ body{
     margin-right: 0;
 }
 
+/*
+
+
+*/
+
 .services{
-    margin-top: 6rem;
-    margin-bottom: 10rem;
+    margin-top: 20rem;
 }
 
 .service{
@@ -498,7 +507,13 @@ Resume
 */
 
 .resume{
+    margin-top: 20rem;
+    margin-bottom: 10rem;
     background-color: var(--app-bg-color);
+    box-shadow: 0 0 81px rgba(19, 182, 255, 24%);
+    padding: 10rem 0;
+    transform: skewY(-6deg);
+    overflow: hidden;
 }
 
 /*
@@ -532,6 +547,7 @@ resume-leftPart
     padding: 1.5rem 0;
     margin-top: 1.5rem;
     position: relative;
+    cursor: pointer;
 }
 
 .resume-list__item:first-child{
