@@ -88,7 +88,6 @@
 
 .skew-reset{
     transform: skewY(6deg);
-    overflow: hidden;
 }
 
 /*
@@ -508,12 +507,10 @@ Resume
 
 .resume{
     margin-top: 20rem;
-    margin-bottom: 10rem;
     background-color: var(--app-bg-color);
     box-shadow: 0 0 81px rgba(19, 182, 255, 24%);
     padding: 10rem 0;
     transform: skewY(-6deg);
-    overflow: hidden;
 }
 
 /*
@@ -595,10 +592,17 @@ resume-right-Part
 
 .resume-content{
     border-left: .3rem solid var(--primitively-color);
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 250ms ease-in;
 }
 
 .resume-content--show{
-
+    opacity: 1;
+    height: auto;
+    overflow: visible;
+    transition: all 250ms ease-in;
 }
 
 .resume-content__item{
@@ -651,6 +655,74 @@ resume-right-Part
 
 .resume-content__description:last-child{
     margin-bottom: 0;
+}
+
+
+/*
+
+portfolio
+
+*/
+
+.portfolio{
+    margin-top: 20rem;
+    margin-bottom: 10rem;
+    background-color: var(--app-bg-color);
+    padding: 10rem 0;
+    transform: skewY(-6deg);
+}
+
+.portfolio-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-list__item{
+    padding: 1.2rem 4rem;
+    border-radius: 5rem;
+}
+
+.portfolio-list__item--active{
+    background-color: var(--primitively-color);
+    color: #fff;
+}
+
+.portfolio-content{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.swiper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.swiper-wrapper{
+}
+
+.swiper-slide{
+}
+
+.portfolio-content__image{
+    width: 100%;
+}
+
+.swiper-pagination{
+    position: static !important;
+    margin-top: 1rem;
+}
+
+.swiper-pagination-bullet{
+    background-color: #fff !important;
+    padding: .7rem;
+    border: solid .4rem #BFBEBE;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #fff !important;
+    border: solid .4rem var(--primitively-color);
 }
 
 

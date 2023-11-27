@@ -3,6 +3,7 @@ const menu = document.querySelector(".menu")
 const cover = document.querySelector(".cover")
 const body = document.querySelector("body")
 const resumeList = document.querySelectorAll(".resume-list__item")
+const resumeContent = document.querySelectorAll(".resume-content")
 
 let hamburger_checker = false
 
@@ -43,3 +44,27 @@ resumeList.forEach(function(item){
         item.style.color = "#fff"
     })
 })
+
+resumeList.forEach(function(item){
+    item.addEventListener("click",function(){
+        changer(item.getAttribute("data-content-id"))
+    })
+})
+
+function changer(resumeItem){
+    resumeContent.forEach(function(items){
+        items.classList.remove("resume-content--show")
+        if(items.id === resumeItem){
+            items.classList.add("resume-content--show")
+        }
+    })
+}
+
+//const swiper = new Swiper('.swiper', {
+//    direction: 'vertical',
+//    loop: true,
+//  
+//    pagination: {
+//      el: '.swiper-pagination',
+//    },
+//  });

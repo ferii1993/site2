@@ -34,6 +34,10 @@
    .service--shape{
     background-position: center 13rem;
     }
+    .portfolio-list__item{
+        font-size: 1.4rem;
+        padding: 1.2rem 3rem;
+    }
 }
 
 @media screen and (max-width: 992px){
@@ -99,6 +103,9 @@
     .resume-content__description{
         font-size: 1.38rem;
     }
+    .portfolio-list{
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -155,7 +162,7 @@
     .service--shape{
         background-position: center 8rem;
         background-size: cover;
-    }   
+    }
 }
 
 @media screen and (max-width: 576px){
@@ -195,6 +202,9 @@
         margin-left: 0;
         margin-top: 2rem;
     }
+    .portfolio-list__item{
+        padding: .6rem 1.5rem;
+    }
 }
 
 @media screen and (max-width: 416px){
@@ -214,4 +224,10 @@
         justify-content: center;
         align-items: center;
     }
+    .portfolio-list__item{
+        font-size: 1.3rem;
+        padding: .6rem 1.2rem;
+    }
 }
+
+
