@@ -4,6 +4,9 @@ const cover = document.querySelector(".cover")
 const body = document.querySelector("body")
 const resumeList = document.querySelectorAll(".resume-list__item")
 const resumeContent = document.querySelectorAll(".resume-content")
+const portfolioList = document.querySelectorAll(".portfolio-list__item")
+const portfolioContent = document.querySelectorAll(".portfolio-content")
+
 
 let hamburger_checker = false
 
@@ -47,15 +50,39 @@ resumeList.forEach(function(item){
 
 resumeList.forEach(function(item){
     item.addEventListener("click",function(){
-        changer(item.getAttribute("data-content-id"))
+        resumeChanger(item.getAttribute("data-content-id"))
     })
 })
 
-function changer(resumeItem){
+function resumeChanger(resumeItem){
     resumeContent.forEach(function(items){
         items.classList.remove("resume-content--show")
         if(items.id === resumeItem){
             items.classList.add("resume-content--show")
+        }
+    })
+}
+
+portfolioList.forEach(function(item){
+    item.addEventListener("click",function(){
+        portfolioList.forEach(function(items){
+            items.classList.remove("portfolio-list__item--active")
+            item.classList.add("portfolio-list__item--active")
+        })
+    })
+})
+
+portfolioList.forEach(function(item){
+    item.addEventListener("click",function(){
+        portfolioListChanger(item.getAttribute("data-content-id"))
+    })
+})
+
+function portfolioListChanger(portfolioitem){
+    portfolioContent.forEach(function(items){
+        items.classList.remove("portfolio-content--show")
+        if(items.id === portfolioitem){
+            items.classList.add("portfolio-content--show")
         }
     })
 }
