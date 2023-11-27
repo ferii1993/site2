@@ -676,6 +676,7 @@ portfolio
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5rem;
 }
 
 .portfolio-list__item{
@@ -690,19 +691,18 @@ portfolio
 }
 
 .portfolio-content{
-    margin-top: 5rem;
     text-align: center;
     opacity: 0;
     height: 0;
     overflow: hidden;
-    transition: all 250ms ease-in;
+    transition: all 1050ms ease-in;
 }
 
 .portfolio-content--show{
     opacity: 1;
     height: auto;
     overflow: visible;
-    transition: all 250ms ease-in;
+    transition: all 1050ms ease-in;
 }
 
 .swiper{
