@@ -205,6 +205,9 @@
     .portfolio-list__item{
         padding: .6rem 1.5rem;
     }
+    .package__link{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 416px){
