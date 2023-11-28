@@ -90,6 +90,10 @@
     transform: skewY(6deg);
 }
 
+.h-full {
+    height: 100%;
+}
+
 /*
     Reset Styles
 */
@@ -745,7 +749,6 @@ pricing
 
 .pricing{
     margin-top: 20rem;
-    margin-bottom: 10rem;
     background-color: var(--app-bg-color);
     box-shadow: 0 0 81px rgba(19, 182, 255, 24%);
     padding: 10rem 0;
@@ -784,7 +787,7 @@ pricing
     margin-top: 2rem;
     margin-bottom: 0;
     font-family: var(--secondary-color);
-    font-size: 3.6rem;
+    font-size: 3.2rem;
 }
 
 .package__price{
@@ -836,6 +839,160 @@ pricing
 .package__link{
     margin-top: 1rem;
 }
+
+
+/*
+
+contact-us
+
+*/
+
+.contact-us{
+    margin-top: 20rem;
+}
+
+.contactus__wrapper{
+    background-image: url("../images/map.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70rem;
+    position: relative;
+    padding: 4rem 0;
+}
+
+.contactus__map{
+    background-color: var(--app-bg-color);
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 59px rgba(96, 233, 255, 27%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.contactus__map-icon{
+    width: 2rem;
+}
+
+.contact{
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--app-bg-color);
+    max-width: 50rem;
+    box-shadow: 0 0 81px var(--shadow-color);
+    padding: 5rem 4rem;
+}
+
+.contact__title{
+    margin: 0;
+    margin-bottom: 1rem;
+    font-family: var(--tertiarily-font);
+    color: var(--primitively-color);
+    font-size: 3rem;
+    margin-left: -12rem;
+}
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__input{
+    background-color: var(--app-bg-color);
+    box-shadow: 0 0 59px rgba(96, 233, 255, 27%);
+    border: none;
+    border-radius: 1rem;
+    width: 34rem;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+.contact__input:first-child{
+    margin-top: 0;
+}
+
+.contact__input:last-child{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.contact__input::placeholder{
+    text-align: left;
+    color: var(--text-color);
+    padding-left: 2rem;
+}
+
+.contact__input--textarea{
+    resize: none;
+}
+
+.contact__submit{
+    margin-top: 2rem;
+    background-color: var(--primitively-color);
+    border: none;
+    color: #fff;
+    border-radius: 5rem;
+    padding: 1rem 14rem;
+}
+
+
+/*
+
+footer
+
+*/
+
+
+.footer__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer__copy-right{
+    font-family: var(--secondary-font);
+    font-size: 1.8rem;
+}
+
+.footer__socials{
+    display: flex;
+    gap: 1rem;
+}
+
+.footer__social{
+    background-color: #333333;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__social:hover{
+    background-color: var(--primitively-color);
+}
+
+.footer__social svg{
+    fill: var(--app-bg-color);
+}
+
+
 
 
 

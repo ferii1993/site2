@@ -1,5 +1,7 @@
 const navBtn = document.querySelector(".nav__toggle-icon")
 const menu = document.querySelector(".menu")
+const menuItem = document.querySelectorAll(".menu__item")
+const menuLink = document.querySelectorAll(".menu__link")
 const cover = document.querySelector(".cover")
 const body = document.querySelector("body")
 const resumeList = document.querySelectorAll(".resume-list__item")
@@ -9,6 +11,30 @@ const portfolioContent = document.querySelectorAll(".portfolio-content")
 
 
 let hamburger_checker = false
+
+menuLink.forEach(function(items){
+    items.addEventListener("click", function(event){
+        event.preventDefault()
+
+        menuLink.forEach(function(item){
+            item.classList.remove("menu__link--active")
+        })
+        items.classList.add("menu__link--active")
+    })
+})
+
+menuItem.forEach(function(items){
+    items.addEventListener("click",function(){
+        let sectionClass = items.getAttribute("data-section")
+        let sectionOffSetTop = document.querySelector(`.${sectionClass}`).offsetTop
+
+        window.scrollTo({
+            top : sectionOffSetTop,
+            behavior: "smooth"
+        })
+    })
+    
+})
 
 navBtn.addEventListener("click",function(){
     navBtn.classList.toggle("nav__toggle-icon--open")

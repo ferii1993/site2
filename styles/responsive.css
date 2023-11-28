@@ -38,6 +38,12 @@
         font-size: 1.4rem;
         padding: 1.2rem 3rem;
     }
+    .contactus__map{
+        display: none;
+    }
+    .contact{
+        margin-right: auto;
+    }
 }
 
 @media screen and (max-width: 992px){
@@ -162,6 +168,9 @@
     .service--shape{
         background-position: center 8rem;
         background-size: cover;
+    }
+    .footer__wrapper{
+        justify-content: center;
     }
 }
 
