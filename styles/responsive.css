@@ -138,6 +138,10 @@
         margin-left: 0;
         margin-bottom: 2rem;
     }
+    
+    .menu__item:last-child{
+        margin-bottom: 0;
+    }
 
     .nav__toggle-icon{
         display: flex;
