@@ -1,4 +1,5 @@
 const navBtn = document.querySelector(".nav__toggle-icon")
+const menu = document.querySelector(".menu")
 const menuItem = document.querySelectorAll(".menu__item")
 const menuLink = document.querySelectorAll(".menu__link")
 const cover = document.querySelector(".cover")
