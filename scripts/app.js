@@ -9,6 +9,7 @@ const resumeContent = document.querySelectorAll(".resume-content")
 const portfolioList = document.querySelectorAll(".portfolio-list__item")
 const portfolioContent = document.querySelectorAll(".portfolio-content")
 
+console.log()
 
 let hamburger_checker = false
 
