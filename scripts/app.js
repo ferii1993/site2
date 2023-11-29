@@ -1,5 +1,4 @@
 const navBtn = document.querySelector(".nav__toggle-icon")
-const menu = document.querySelector(".menu")
 const menuItem = document.querySelectorAll(".menu__item")
 const menuLink = document.querySelectorAll(".menu__link")
 const cover = document.querySelector(".cover")
@@ -52,14 +51,6 @@ navBtn.addEventListener("click",function(){
         hamburger_checker = false
     }
     console.log(hamburger_checker)
-})
-
-menu.addEventListener("touchstart",function(){
-   if(hamburger_checker){
-        menu.classList.remove("menu--open") 
-        navBtn.classList.remove("nav__toggle-icon--open")  
-        cover.classList.remove("cover--show") 
-   }
 })
 
 
