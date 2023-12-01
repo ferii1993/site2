@@ -13,6 +13,7 @@
     --primitively-font: "Poppins";
     --secondary-font: "Poppins SemiBold";
     --tertiarily-font: "Poppins Bold";
+    --header-backgroundImage : url("../images/shapes/header-shape.svg"); 
 }
 
 /*
@@ -242,7 +243,7 @@ body{
 
 .home{
     margin-top: 12rem;
-    background-image: url("../images/shapes/header-shape.svg");
+    background-image: var(--header-backgroundImage);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
@@ -303,7 +304,7 @@ body{
     background-size: cover;
     background-position: -19rem center;
     position: relative;
-    border: 1.2rem solid #fff;
+    border: 1.2rem solid var(--section-bg-color);
     box-shadow: 0 0 59px rgba(96, 233, 255, 27%);
 }
 
@@ -359,6 +360,7 @@ body{
     flex-basis: 50%;
     flex-shrink: 0;
     padding: 4rem;
+    background-color: var(--section-bg-color);
 }
 
 .about__title{
@@ -511,7 +513,7 @@ Resume
 
 .resume{
     margin-top: 20rem;
-    background-color: var(--app-bg-color);
+    background-color: var(--section-bg-color);
     box-shadow: 0 0 81px rgba(19, 182, 255, 24%);
     padding: 10rem 0;
     transform: skewY(-6deg);
@@ -586,6 +588,7 @@ resume-leftPart
     margin-left: 5rem;
     font-family: var(--secondary-font);
     font-size: 2rem;
+    
 }
 
 /*
@@ -749,7 +752,7 @@ pricing
 
 .pricing{
     margin-top: 20rem;
-    background-color: var(--app-bg-color);
+    background-color: var(--section-bg-color);
     box-shadow: 0 0 81px rgba(19, 182, 255, 24%);
     padding: 10rem 0;
     transform: skewY(-6deg);
@@ -887,7 +890,7 @@ contact-us
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--app-bg-color);
+    background-color: var(--section-bg-color);
     max-width: 50rem;
     box-shadow: 0 0 81px var(--shadow-color);
     padding: 5rem 4rem;
@@ -943,7 +946,7 @@ contact-us
     background-color: var(--primitively-color);
     border: none;
     color: #fff;
-    border-radius: 5rem;
+    border-radius: 1rem;
     padding: 1rem 14rem;
 }
 
@@ -954,13 +957,16 @@ footer
 
 */
 
+.footer{
+    background-color: var(--app-bg-color);
+}
 
 .footer__wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
     flex-wrap: wrap;
 }
 
@@ -974,7 +980,8 @@ footer
     gap: 1rem;
 }
 
-.footer__social{
+.footer__social,
+.change-theme{
     background-color: #333333;
     border-radius: 50%;
     width: 5rem;
@@ -984,12 +991,30 @@ footer
     align-items: center;
 }
 
-.footer__social:hover{
+.footer__social:hover,
+.change-theme:hover{
     background-color: var(--primitively-color);
+    cursor: pointer;
 }
 
-.footer__social svg{
+.footer__social svg,
+.change-theme svg{
     fill: var(--app-bg-color);
+}
+
+.dark-theme{
+    --primitively-color: #0ABEAD;
+    --secondary-color: #F57F17;
+    --text-color: #95A5C6;
+    --app-bg-color: #161D26;
+    --section-bg-color: #1F2935;
+    --header-backgroundImage : url("../images/shapes/header-shape-dark.svg"); 
+}
+
+.dark-theme .home__photo,
+.header, .about, .resume,
+.resume-list, .pricing, .package{
+    box-shadow: none;
 }
 
 
